@@ -1,0 +1,4 @@
+echo "Le calendrier de mon annee academique">mon_an.acad
+cal >> mon_an.acad
+wc -l mon_an.acad
+

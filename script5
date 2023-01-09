@@ -1,0 +1,4 @@
+ls -l /usr/bin | head -n 8 > inter
+cat inter>resu1
+tail -n 5 resu1>resu2
+grep "^ad" resu2>resu3

@@ -1,0 +1,15 @@
+if [ $# -eq 0 ]
+then
+   echo "aucun nom dutilisateur specifie"
+   exit 0
+fi
+user=$1
+echo " informations de lutilisateur"
+echo "id"
+id "$USER"
+echo "finfer"
+finger -m "$USER"
+echo "who"
+who "$USER"
+echo "infos extraites du fichier /etc/passwd"
+grep "$USER" /etc/passwd
